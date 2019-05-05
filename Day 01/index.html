@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> HTML Tags </title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+</head>
+<body>
+    <header class="text-center masthead">
+        <div class="container">
+            <h1> Day 01: UnUsed HTML Tags </h1>
+        </div>
+    </header>    
+    <main>
+        <div class="container">
+            <section class="audio-wrapper clearfix">
+                <h2 class="title">
+                    Audio
+                </h2>
+                <p class="lead-text"> specifies Sound, music and other audio streams. </p>
+                <code>
+                    <p>Attributes for the Video Tags:</p>
+                    <strong>controls,</strong>
+                    <strong>autoplay,</strong>                  
+                    <strong>Preload,</strong>
+                    <strong>loop,</strong>
+                    <strong>muted,</strong>
+                    <strong>src</strong>
+                </code>
+                <audio controls autoplay preload="none">
+                    <source src="assets/media/SampleAudio.ogg" type="audio/ogg"></source>
+                    <source src="assets/media/SampleAudio.wav" type="audio/wav"></source>
+                    <source src="assets/media/SampleAudio.mp3" type="audio/mpeg"></source>                            
+                    Your Browser Does not Support Audio Tag.
+                </audio>
+             </section>
+
+             <section class="video-wrapper clearfix">
+                 <h2 class="title">
+                     Video
+                 </h2>
+                 <p class="lead-text"> specifies video, movie clip or other video </p>
+                 <code>
+                    <p>Attributes for the Video Tags:</p>
+                    <strong>controls,</strong>
+                    <strong>autoplay,</strong>
+                    <strong>Poster,</strong>
+                    <strong>Preload,</strong>
+                    <strong>loop,</strong>
+                    <strong>muted,</strong>
+                    <strong>src</strong>
+                 </code>
+                 <video controls poster="assets/media/video-poster.jpg">
+                     <source src="assets/media/SampleVideo.mp4" type="video/mp4"></source>
+                     <source src="assets/media/SampleVideo.ogg" type="video/ogg"></source>
+                     <!-- <track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+                     <track src="subtitles_no.vtt" kind="subtitles" srclang="no" label="Norwegian"> -->
+                     Your Browser Does not support Video Tag.
+                 </video>
+             </section>
+
+            </div><!-- Container ::ends -->
+
+             <!-- Map Tag -->
+             <section class="map-wrapper">
+                <div class="container">
+                    <h2 class="title"> Map Tag </h2>
+                    <p class="lead-text"> Image map is an image with clickable areas. </p>
+
+                    <img src="assets/media/languages.png" alt="Planets" class="img-responsive" usemap="#languages" />
+                    <map name="languages">
+                        <area shape="rect" coords="20,20,350,450" href="https://www.w3.org/TR/html52/" alt="HTML 5" target="_blank" />
+                        <area shape="rect" coords="420,20,750,450" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" alt="Javascript" target="_blank" />
+                        <area shape="rect" coords="850,20,1150,450" href="https://www.w3.org/Style/CSS/current-work.en.html" alt="CSS 3" target="_blank" />                    
+                    </map>
+                </div>
+             </section>
+
+        
+        
+    </main>
+
+
+</body>
+</html>
