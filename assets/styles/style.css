@@ -15,6 +15,9 @@ a{
     color: #464646;
     text-decoration: none;
 }
+a:hover{
+    color: #019688;
+}
 ul{
     padding: 0;
 }
@@ -23,7 +26,7 @@ ul{
     margin: 0px auto;
 }
 .lead-wrapper{
-    background: #009688;
+    background: #f5845b;
     padding: 80px 0;
     color: #fafafa;
 }
@@ -37,31 +40,78 @@ ul{
     padding: 20px;    
 }
 .card{
+    margin: 0;
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    align-content: center;
+    align-items: flex-start;
     justify-content: space-around;
+    flex-direction: column;
 }
 .card-item{
-    flex-basis: calc(25% - 15px );
+    width: 42%;
     background: #5f5f5f;
     color: #fff;    
     padding: 30px;
-    min-height: 180px;
+    min-height: 250px;
     border-radius: 25px;
     box-shadow: 0 0 10px #d2cbcb;
     font-size: 1.2em;
     margin-bottom: 25px;
     cursor: pointer;
     transition: 0.3s box-shadow;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
-/* .card-item:nth-child(3n ){
-    background: #807c7c;
-} */
+.card-item:nth-child(even){
+    align-self: flex-end;
+}
 .card-item:hover{
     box-shadow: 0 0 19px #7d7979;    
 }
+.card-item a{
+    color: #fff;
+}
+.card-item a:hover{
+    color: #f5845b;
+}
+
+
+/* 
+* Timeline CSS
+*/
+.timeline{ position: relative; }
+.timeline:after{
+    content: '';
+    position: absolute;
+    margin: 0px auto;
+    left: 0;
+    right: 0;
+    top: auto;
+    bottom: auto;
+    width: 3px;
+    height: 99.5%;
+    background: #019688;
+}
+.timeline li:after,
+.timeline li::before{
+    content: '';
+    position: absolute;
+    width: 19%;
+    height: 2px;    
+}
+.timeline li:nth-child(odd)::after{   
+    right: -19%;
+    border-top: solid 3px #019688;    
+}
+.timeline li:nth-child(even)::before{    
+    left: -19%;
+    border-top: solid 3px #019688;    
+}
+
 
 /* 
 *
@@ -88,3 +138,31 @@ ul{
 */
 .mt-2{ margin-top: 2em; }
 .mb-2{ margin-bottom: 2em; }
+.lead-title{
+    font-size: 2.65em;
+}
+
+
+/* 
+*
+* Main Content
+*
+*/
+.main-content{
+    padding: 50px 15px;
+}
+.main-content .title{
+    font-size: 2em;
+    margin-bottom: 45px;
+    margin-top: 0;
+    color: #019688;
+}
+.main-content .title:before,
+.main-content .title:after{
+    content: '';
+    display: inline-flex;
+    vertical-align: middle;
+    height: 3px;
+    width: 10%;
+    background: #019688;
+}
