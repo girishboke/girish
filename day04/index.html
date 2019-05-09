@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">    
+    <title>Day 04 - Form Elements </title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <header>
+        <h1 class="text-center">
+            Day 04 - Form Elements
+        </h1>
+    </header>
+    <main>
+        <section class="container">            
+            <form action="PostEmail.php" method="post" id="contact-form">
+                <fieldset>
+                    <legend>Contact Me</legend>
+                    <div class="form-control">
+                        <label for="firstName">First Name:</label>
+                        <input type="text" name="firstName" id="firstName" placeholder="First Name" />
+                    </div>
+                    <div class="form-control">
+                        <label for="LastName">Name:</label>
+                        <input type="text" name="lastName" id="lastName" placeholder="Last Name" />
+                    </div>
+                    <div class="form-control">
+                        <label for="emailAddress">Email Address:</label>
+                        <input type="email" name="emailAddress" id="emailAddress" placeholder="Email Address" />
+                    </div>
+                    <div class="form-control">
+                        <label for="contact">Telephone Number:</label>
+                        <input type="tel" name="contact" id="contact"  placeholder="Telephone Number"/>
+                    </div>
+                    <div class="form-control">      
+                        <label for="message"> Message: </label>              
+                        <textarea name="Message" id="messgeBody" rows="5" placeholder="Message">
+
+                        </textarea>
+                    </div>
+                    <div class="form-control">
+                        <input type="reset" value="reset" id="reset" />
+                        <input type="submit" value="submit" id="submit">
+                    </div>
+                </fieldset>                    
+            </form>             
+        </section>
+    </main>
+
+
+
+</body>
+</html>
