@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form Elements & Some Unused Elements. </title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <header class="container">
+        <h1 class="text-center">
+            Form Elements &amp; Some Unsused Elements
+        </h1>
+    </header>
+    <main class="container">
+        <section class="clearfix">
+            <div class="col-6">
+                <h3 class="title">
+                    Picture Tag:
+                </h3>
+                <picture>
+                    <source 
+                        media="(max-width: 650px)"
+                        srcset="assets/images/work-img-1.jpg">
+                    </source>
+                    <source 
+                        media="(min-width: 1200px)"
+                        srcset="assets/images/work-things.jpg"></source>
+                    <img src="assets/images/work-note.jpg" alt="Work Space" class="img-responsive">
+                </picture>
+            </div>
+            <div class="col-6">
+                <h3 class="title">
+                    Progress Tag:
+                </h3>
+                <progress max="1000" value="626"> </progress>
+
+                <h3 class="title">
+                    Meter Tag
+                </h3>
+                <meter value="67" min="0" max="100"> Reults</meter>
+
+                <!-- Do not show Content -->
+                <h3 class="title">Template Tag:</h3>
+                <p>hides the content written in this tag.</p>
+                <template>
+                    <ul>
+                        <li>list item 1</li>
+                        <li>list item 2</li>
+                        <li>list item 3</li>
+                    </ul>
+                </template>
+                <!-- Do not show Content -->
+
+                <h3 class="title">
+                    Time Tag:
+                </h3>
+                <p>
+                    I have date with my cat on <time datetime="2019-05-10 06:00">Thursday 10 May, 2019</time>
+                </p>
+
+                <h3 class="title">Word Break Opportuntity (Wbr) Tag:</h3>
+                <p>The Cats are most majestic and <wbr>Graceful</wbr> animals on the planet. </p>
+                <p>jfasfgowgorbwoirgipwrwqbrpwnpr<wbr>pwr</wbr>wqrhphwqprhw</p>
+
+                <!-- <h3 class="title">Dialog Tag:</h3>
+                <dialog open> This is Dialog tag </dialog> -->
+                              
+            </div>
+        </section>
+        <section>
+            <h3 class="title"> Datalist Tag </h3>
+
+            <form action="action-page.php" method="GET">    
+                <input type="text" name="listLang" list="listLanguages" placeholder="languages">
+                <datalist id="listLanguages">
+                    <option value="HTML"></option>
+                    <option value="CSS"></option>
+                    <option value="Javascript"></option>
+                </datalist>
+                <input type="submit" name="submitForm" value="Submit" id="submit">
+            </form>  
+
+            
+        </section>
+    </main>
+
+
+</body>
+</html>
