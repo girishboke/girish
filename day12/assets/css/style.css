@@ -1,0 +1,45 @@
+:root{
+    --yellow: #ffcc22;
+    --black: #272727;
+}
+html{
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+}
+*,
+*:after,
+*:before{
+    box-sizing: inherit;
+}
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+    'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 900;
+    color: var(--black);
+    background-image: -webkit-linear-gradient(20deg, #FF9800, #e85084);
+            background-image: linear-gradient(20deg, #FF9800, #e85084);    
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0 0 10px 0;
+}
+
+
+
+/* 
+* Grid Style
+*/
+.container{
+    display: grid;
+    grid-template-columns: 120px auto 120px;
+    grid-template-rows: 150px auto auto;
+    grid-gap: 20px;
+}
+.item{
+    background: var(--yellow);
+    padding: 20px;
+    border-bottom: 2px solid #e2b319;
+}
