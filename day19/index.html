@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FreeCodeCamp Product Landing</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" 
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header id="header" class="masthead">        
+        <a href="#" class="nav-brand">
+            <img src="assets/images/logo.png" alt="Pexels" id="header-img"> 
+            <!-- Pixels -->
+        </a>
+        <nav class="navbar" id="nav-bar">
+            <ul class="navbar-nav">
+                <li>
+                    <a class="nav-link" href="#featured">features</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#how-works">how it works</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#pricing">pricing</a>
+                </li>                
+            </ul>
+        </nav>        
+    </header>    
+    <main class="main-wrapper">
+        <section class="banner">
+            <div class="banner-wrapper">                
+                <img src="assets/images/banner.jpg" alt="Banner" class="img-responsive">                
+            </div>
+        </section>
+        <section>            
+            <div class="lead-content container text-center narrow">
+                <h1 class="title">Welcome To Pixels</h1>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in magna est.
+                    Fusce auctor purus vel bibendum rutrum. Quisque molestie lectus eros, in 
+                    pharetra nulla mollis ac. Duis nec quam ut dolor consequat dictum eget eu 
+                    nibh. Fusce sit amet lorem turpis.
+                </p>
+                <p>
+                   Donec vitae scelerisque ipsum, non euismod purus. Etiam pharetra quam diam,
+                   vitae porta elit elementum sit amet. Nulla non mauris quam. Sed dignissim 
+                   eros tortor, interdum auctor felis vestibulum eleifend. Quisque pharetra mollis
+                   nunc eu elementum. Cras tristique sollicitudin leo ut varius. 
+                   Aenean eget eros pulvinar orci consequat consectetur. In suscipit, ante ultrices
+                   rhoncus ullamcorper, urna sapien pretium quam, id maximus eros lectus.
+                </p>
+            </div>
+             <!-- Form Wrapper ::starts -->
+            <div class="form-wrapper">
+                <div class="container">
+                    <h2 class="title">Subcribe for more information</h2>
+                    <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+                        <div class="form-control">
+                            <input type="email" name="email" id="email" placeholder="Email Address" required>
+                        </div>
+                        <div class="form-control">
+                            <input type="submit" id="submit" value="Subscribe">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- Form Wrapper ::ends -->
+            <!-- Features ::Start -->
+            <div class="featured-wrapper" id="featured">
+                <div class="container">
+                    <h3 class="title text-center">features</h3>
+                    <ul class="featured-list">
+                        <li class="featured-item">
+                            <i class="fas fa-fire-alt"></i>
+                            <h4 class="title">Premium Materials</h4>
+                            <p>
+                                Our trombones use the shiniest brass which is sourced locally. 
+                                This will increase the longevity of your purchase.
+                            </p>
+                        </li>
+                        <li class="featured-item">
+                            <i class="fas fa-shipping-fast"></i>
+                            <h4 class="title">Fast Shipping</h4>
+                            <p>
+                                We make sure you recieve your trombone as soon as we have finished making it. 
+                                We also provide free returns if you are not satisfied.
+                            </p>
+                        </li>
+                        <li class="featured-item">
+                            <i class="fas fa-bullseye"></i>
+                            <h4 class="title">Quality Assurance</h4>
+                            <p>
+                                For every purchase you make, we will ensure there are no damages or faults and 
+                                we will check and test the pitch of your instrument.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Features ::end -->
+           
+            <div class="embed-wrapper container text-center" id="how-works">
+                <h2 class="title">Watch it Live!</h2>
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/yAoLSRbwxL8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </section>
+        <section class="pricing-wrapper" id="pricing">
+            <div class="container">
+                <h3 class="title text-center">Pricing</h3>
+                <ul class="pricing-list">
+                    <li class="pricing-item">                       
+                        <h4 class="pricing-title">Basic Pricing</h4>
+                        <h5 class="price">£250</h5>
+                        <p>
+                            Our trombones use the shiniest brass which is sourced locally. 
+                            This will increase the longevity of your purchase.
+                        </p>
+                        <button class="btn btn-primary">select</button>
+                    </li>
+                    <li class="pricing-item">                        
+                        <h4 class="pricing-title">Classic Pricing</h4>
+                        <h5 class="price">£300</h5>
+                        <p>
+                            We make sure you recieve your trombone as soon as we have finished making it. 
+                            We also provide free returns if you are not satisfied.
+                        </p>
+                        <button class="btn btn-primary">select</button>
+                    </li>
+                    <li class="pricing-item">                        
+                        <h4 class="pricing-title">Gold Pricing</h4>
+                        <h5 class="price">£450</h5>
+                        <p>
+                            For every purchase you make, we will ensure there are no damages or faults and 
+                            we will check and test the pitch of your instrument.
+                        </p>
+                        <button class="btn btn-primary">select</button>
+                    </li>
+                </ul>
+            </div>
+        </section>        
+        <!-- Footer ::starts -->
+        <footer class="footer text-center">
+            <div class="container">
+                <nav class="navbar navbar-footer">
+                    <ul class="navbar-nav">
+                        <li>
+                            <a href="#">Privacy</a>
+                        </li>
+                        <li>
+                            <a href="#"> Terms </a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="copyright">
+                  <small> &copy; 2019 <a href="#">Pixels</a> All rights reserved. </small>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer ::ends -->
+    </main>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

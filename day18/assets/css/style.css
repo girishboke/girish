@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box
+}
+*:after,
+*::before{
+    box-sizing: inherit;
+}
+:root{
+    --primary: #ff7f50;
+    --body-text: #434343;
+    --text-white: #ffffff;
+}
+
+
+body{
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #434343;
+    background: linear-gradient(60deg, #ffeb3b59, #b9c72c);
+}
+a,
+a:visited{
+    color: var(--primary);
+    text-decoration: none;
+}
+a:hover,
+a:focus{
+    color: var(--body-text);
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0 0 15px 0;
+    color: var(--primary);
+}
+p{
+    margin: 0 0 15px 0;
+}
+
+
+select{
+    width: 100%;
+    height: 45px;    
+    font-size: 1rem;
+    border: 2px solid #ccc;
+}
+textarea{
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    font-size: 1rem;
+    width: 100%;
+}
+/* 
+* Utility Classes
+*/
+.text-center{
+    text-align: center;
+}
+.py-1{
+    padding: 1rem 0;
+}
+/* 
+* Page CSS
+*/
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.container.narrow{
+    max-width: 720px;
+}
+.masthead{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* 
+* Form Style
+*/
+.form-wrapper{
+    padding: 50px 0;
+}
+.form-control {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+.fl-right{
+    justify-content: flex-end;
+}
+.form-control > label{
+    flex-basis: 30%;
+}
+.form-control input:not([type="submit"]){
+    width: 100%;
+    flex-basis: 70%;
+    padding: 10px;
+    border-radius: 7px;
+    border: 2px solid #ccc;
+    font-size: 1rem;
+}
+.form-control select{
+    flex-basis: 70%;
+}
+#submit{
+    padding: 10px 40px;
+    border-radius: 7px;
+    background: var(--primary);
+    color: var(--text-white);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.4s all;
+    
+}
+#submit:hover{
+    background: var(--body-text);
+    color: var(--text-white);
+}
+#survey-form{
+    padding: 50px 30px 30px;
+    background: #ffffff;
+    border-radius: 18px;
+}
