@@ -91,6 +91,7 @@ h4{
     padding: 10px 20px;
     background: #ebeebe;
     align-items: center;
+    flex-wrap: wrap;
 }
 .nav-brand{
     font-size: 3em;
@@ -189,7 +190,8 @@ Main Content
     width: 100%;
     max-width: 360px;
 }
-#submit{
+#submit,
+.btn{
     cursor: pointer;
     padding: 10px 50px;
     background: var(--primary);
@@ -199,7 +201,8 @@ Main Content
     color: var(--text-white);
     margin-top: 15px;
 }
-#submit:hover{    
+#submit:hover,
+.btn:hover{    
     background: #3cc177;
 }
 
@@ -216,6 +219,11 @@ Main Content
     padding-bottom: 100px;
     background: linear-gradient(50deg, #f7f4f4, #ffffff);
 }
+.price{
+    font-size: 2.4em;
+    color: var(--body-text);
+}
+
 
 /* 
 * Footer
@@ -232,5 +240,21 @@ Main Content
 @media (max-width: 767px){
     .navbar-nav{
         margin-bottom: 0;
+    }
+    .featured-item, .pricing-item{
+        flex-basis: 48%;
+        margin-bottom: 1em;
+    }
+}
+@media (max-width: 576px){
+    .nav-brand{
+        margin: 0 auto;
+    }
+    .navbar {
+        margin-left: 0;
+        flex-basis: 100%;
+    }
+    .featured-item, .pricing-item{
+        flex-basis: 100%;
     }
 }
