@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+   
+</head>
+<body>
+    <main>
+        <header class="text-center masthead">
+            <div class="container">
+                <h1 id="title">Survey Form</h1>
+                <p id="description"> Please fill up the form below. </p>
+            </div>
+        </header>
+        <section class="form-wrapper">
+            <div class="container narrow">
+                <form action="" method="post" id="survey-form">
+                    <div class="form-control">
+                        <label for="name" id="name-label">FullName:</label>
+                        <input type="text" name="fullname" placeholder="FullName" id="name" required>
+                    </div>
+                    <div class="form-control">
+                        <label for="email" id="email-label">Email Address:</label>
+                        <input type="email" name="email" placeholder="Email" id="email" required>
+                    </div>
+                    <div class="form-control">
+                        <label for="number" id="number-label">Telephone:</label>
+                        <input type="number" name="number-label" id="number" min="10" max="15" placeholder="Telephone">
+                    </div>
+                    <div class="form-control">
+                        <label for="dropdown">Survey Dropdown</label>
+                        <select name="dropdown" id="dropdown">
+                            <option value="survey One">survey One</option>
+                            <option value="survey Two">survey Two</option>
+                            <option value="survey Three">survey Three</option>
+                        </select>
+                    </div>
+                    <div class="form-control">
+                        <label for="Radio">Survey Radio:</label>
+                        <div class="radio-wrap">
+                                <label for="radio-yes">Yes</label>
+                                <input type="radio" value="1" name="radio" id="radio-yes">
+                        </div>
+                        <div class="radio-wrap">
+                            <label for="radio-no">No</label>
+                            <input type="radio" value="2" name="radio" id="radio-no">                
+                        </div>                    
+                        
+                    </div>
+                    <div class="form-control">
+                        <label for="checkbox">Survey Checkbox</label>
+                        
+                        <div class="checkbox-wrap">
+                            <label for="yes-checked">Yes</label>
+                            <input type="checkbox" value="1" name="Yes" id="yes-checked">    
+                        </div>
+                        <div class="checkbox-wrap">
+                            <label for="no-checked">Yes</label>
+                            <input type="checkbox" name="No" value="2" id="no-checked">
+                        </div>                                            
+                        <div class="checkbox-wrap">
+                            <label for="both-checked">Both</label>
+                            <input type="checkbox" name="Not Sure" value="3" id="both-checked">
+                        </div>                        
+                    </div>
+                    <div class="form-container">
+                        <textarea name="additional-comments" id="additional-comments"
+                        cols="30" rows="5" placeholder="Additional Comments"></textarea>
+                    </div>
+                    <div class="form-control fl-right py-1">
+                        <input type="submit" value="submit" id="submit">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

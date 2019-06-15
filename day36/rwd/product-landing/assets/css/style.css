@@ -1,0 +1,260 @@
+*{
+    box-sizing: border-box;
+}
+*:before,
+*:after{
+    box-sizing: inherit;
+}
+
+:root{
+    --primary: #42c77d;
+    --body-text: #434343;
+    --text-white: #ffffff;
+    --secondary: #63a695;    
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 16px;
+    color: var(--body-text);
+    line-height: 1.5;    
+}
+a{
+    color: #63a695;
+    text-decoration: none;
+}
+a:hover{
+    color: #297b4d;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+iframe{
+    max-width: 100%;
+}
+h1,h2,h3,h4,h5,h6{
+    color: var(--secondary);
+    text-transform: capitalize;
+    font-weight: 500;
+    margin: 0 0 15px 0;
+}
+h1{
+    font-size: 3.2em;
+}
+h2{
+    font-size: 2.6em;
+}
+h3{
+    font-size: 2.2em;
+}
+h4{
+    font-size: 1.7em;
+}
+
+.container{
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.narrow{
+    max-width: 720px;
+}
+
+
+/*
+* Utilities 
+*/
+.img-responsive{
+    max-width: 100%;
+    width: 100%;
+}
+.text-center{
+    text-align: center;
+}
+
+
+/* 
+* Header
+*/
+.masthead{   
+    padding-top: 20px;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    padding: 10px 20px;
+    background: #ebeebe;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.nav-brand{
+    font-size: 3em;
+    font-weight: bold;
+    font-family: monospace;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    line-height: 1.5;
+    color: #177c80;
+}
+.nav-brand:hover{
+    color: #177c80;
+}
+.navbar{
+    margin-left: auto;        
+}
+.navbar-nav{
+    display: flex;
+    text-transform: capitalize;
+    justify-content: center;    
+}
+.navbar-nav li{
+    margin-right: 10px;
+}
+.navbar-nav li a{
+    padding: 15px;
+    display: block;
+    color: var(--body-text);
+}
+.navbar-nav li a:hover{
+    color: var(--primary);
+}
+#header-img{
+    width: 150px;
+}
+
+
+
+/* 
+Main Content
+*/
+.main-wrapper{
+    padding-top: 92px;
+    padding-bottom: 45px;
+}
+.lead-content{
+    padding: 45px 0;    
+}
+
+/* 
+* Featured List
+*/
+.featured-wrapper{
+    background: #ebeebe;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.featured-list,
+.pricing-list{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+}
+.featured-item,
+.pricing-item{
+    flex-basis: 32%;    
+    border-radius: 15px;
+    box-shadow: 0 0 20px #615e5e2b;
+    background: var(--text-white);
+    padding: 35px;
+}
+.featured-item .fas{
+    font-size: 2em;
+    color: #b1e7c7;
+    margin-bottom: 0.5em;
+}
+
+/* 
+*  Newsletter
+*/
+.form-wrapper{
+    padding: 70px 0;
+    text-align: center;
+    background: linear-gradient(50deg, #f7f4f4, #ffffff);    
+}
+.form-wrapper .title{
+    font-size: 2em;
+    text-transform: capitalize;
+}
+.form-control input[type="email"]{
+    padding: 15px 10px;
+    border: none;
+    border-radius: 7px;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 360px;
+}
+#submit,
+.btn{
+    cursor: pointer;
+    padding: 10px 50px;
+    background: var(--primary);
+    border: none;
+    border-radius: 7px;
+    font-size: 1rem;
+    color: var(--text-white);
+    margin-top: 15px;
+}
+#submit:hover,
+.btn:hover{    
+    background: #3cc177;
+}
+
+.embed-wrapper{
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+
+/* 
+* Pricing
+*/
+.pricing-wrapper{
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background: linear-gradient(50deg, #f7f4f4, #ffffff);
+}
+.price{
+    font-size: 2.4em;
+    color: var(--body-text);
+}
+
+
+/* 
+* Footer
+*/
+.footer .navbar-nav{
+    margin-top: 25px;
+    margin-bottom: 45px;
+    border-bottom: 1px solid #615e5e2b;
+}
+
+
+
+
+@media (max-width: 767px){
+    .navbar-nav{
+        margin-bottom: 0;
+    }
+    .featured-item, .pricing-item{
+        flex-basis: 48%;
+        margin-bottom: 1em;
+    }
+}
+@media (max-width: 576px){
+    .nav-brand{
+        margin: 0 auto;
+    }
+    .navbar {
+        margin-left: 0;
+        flex-basis: 100%;
+    }
+    .featured-item, .pricing-item{
+        flex-basis: 100%;
+    }
+}
