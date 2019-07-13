@@ -96,3 +96,11 @@ Grid CSS
     color: #fff;
     z-index: 1;
 }
+
+@media (max-width: 479px) {
+
+    .date-grid,
+    .day-of-week {
+        grid-template-columns: repeat(7, minmax(40px, 1fr));
+    }
+}
